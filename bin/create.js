@@ -25,7 +25,7 @@ if (!projectName) {
 const templateDir = path.join(__dirname, '../template')
 const projectDir = path.join(process.cwd(), projectName)
 
-if (!fs.existsSync(templatePath)) {
+if (!fs.existsSync(templateDir)) {
   console.error('❌ 错误：template 模板目录不存在，请检查发布的包内容')
   process.exit(1)
 }
