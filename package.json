@@ -23,6 +23,9 @@
   ],
   "type": "module",
   "main": "index.js",
+  "bin": {
+    "create-gaowenhan-vtw": "bin/create.js"
+  },
   "scripts": {
     "dev": "webpack serve --config config/webpack.dev.mjs",
     "start": "pnpm dev",
