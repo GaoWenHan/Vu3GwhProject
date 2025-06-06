@@ -1,11 +1,8 @@
 {
   "name": "create-gaowenhan-vwt",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Vue 3 + TypeScript项目模板",
-  "files": [
-    "bin/",
-    "template/"
-  ],
+  "files": ["bin/", "template/"],
   "repository": {
     "type": "git",
     "url": "https://github.com/GaoWenHan/Vu3GwhProject.git"
@@ -32,6 +29,10 @@
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.11.0",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "inquirer": "^12.6.3"
+  },
   "devDependencies": {
     "@babel/core": "^7.27.4",
     "@babel/preset-env": "^7.27.2",
@@ -50,7 +51,6 @@
     "@vue/test-utils": "^2.4.6",
     "autoprefixer": "^10.4.21",
     "babel-loader": "^10.0.0",
-    "chalk": "^5.4.1",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.2",
@@ -64,7 +64,6 @@
     "happy-dom": "^17.6.3",
     "html-webpack-plugin": "^5.6.3",
     "husky": "^9.1.7",
-    "inquirer": "^12.6.3",
     "lint-staged": "^16.1.0",
     "markdownlint": "^0.38.0",
     "markdownlint-cli": "^0.45.0",
