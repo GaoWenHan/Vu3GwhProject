@@ -1,6 +1,6 @@
 {
   "name": "create-gaowenhan-vtw",
-  "version": "1.0.9",
+  "version": "1.0.1",
   "description": "Vue 3 + TypeScript项目模板",
   "files": [
     "bin/",
@@ -10,12 +10,7 @@
     "type": "git",
     "url": "https://github.com/GaoWenHan/Vu3GwhProject.git"
   },
-  "keywords": [
-    "vue",
-    "typescript",
-    "template",
-    "boilerplate"
-  ],
+  "keywords": [],
   "type": "module",
   "main": "index.js",
   "bin": {
@@ -34,7 +29,6 @@
     "validate": "pnpm lint && pnpm test && pnpm type-check",
     "prepare": "husky install"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.11.0",

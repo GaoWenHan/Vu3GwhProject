@@ -29,7 +29,9 @@ fs.mkdirSync(projectDir);
 function copyTemplate(src, dest) {
   const stat = fs.statSync(src);
   if (stat.isDirectory()) {
-    fs.mkdirSync(dest);
+    if (!fs.existsSync(dest)) {
+      fs.mkdirSync(dest);
+    }
     fs.readdirSync(src).forEach(file => {
       copyTemplate(path.join(src, file), path.join(dest, file));
     });
