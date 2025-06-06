@@ -1,11 +1,12 @@
 {
   "name": "create-gaowenhan-vtw",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Vue 3 + TypeScript项目模板",
   "files": [
     "src",
     "public",
     "config",
+    "template",
     "*.json",
     "*.js",
     "*.mjs",
