@@ -1,8 +1,11 @@
 {
   "name": "create-gaowenhan-vwt",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Vue 3 + TypeScript项目模板",
-  "files": ["bin/", "template/"],
+  "files": [
+    "bin/",
+    "template/"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/GaoWenHan/Vu3GwhProject.git"

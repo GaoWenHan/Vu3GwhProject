@@ -42,7 +42,7 @@ function copyTemplate(src, dest) {
     if (!fs.existsSync(dest)) {
       fs.mkdirSync(dest)
     }
-    fs.readdirSync(src).forEach((file) => {
+    fs.readdirSync(src).forEach(file => {
       copyTemplate(path.join(src, file), path.join(dest, file))
     })
   } else {
@@ -129,7 +129,7 @@ inquirer
       default: true
     }
   ])
-  .then((answers) => {
+  .then(answers => {
     if (answers.initGit) {
       try {
         // 👇 更安全的 stdio 设置
