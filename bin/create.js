@@ -11,8 +11,8 @@ if (!projectName) {
   process.exit(1);
 }
 
-const __dirname = path.dirname(new URL(import.meta.url).pathname);
-const templateDir = path.join(__dirname, '../template');
+const __dirname = path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1'));
+const templateDir = path.join(__dirname, 'template');
 const projectDir = path.join(process.cwd(), projectName);
 
 // 创建项目目录
