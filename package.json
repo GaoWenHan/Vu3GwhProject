@@ -1,6 +1,6 @@
 {
   "name": "create-gaowenhan-vwt",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Vue 3 + TypeScript项目模板",
   "files": [
     "bin/",
