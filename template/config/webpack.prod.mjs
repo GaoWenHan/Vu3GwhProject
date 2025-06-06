@@ -9,9 +9,13 @@ import chalk from 'chalk'
 
 const gradientColors = [
   '#FF0000',
-  '#FF3300', '#FF6600', '#FF9900',
+  '#FF3300',
+  '#FF6600',
+  '#FF9900',
   '#FFCC00',
-  '#99FF00', '#66FF00', '#33FF00',
+  '#99FF00',
+  '#66FF00',
+  '#33FF00',
   '#00FF00'
 ]
 

@@ -16,6 +16,8 @@ export default defineConfig({
       provider: 'v8',
       reporter: ['text', 'json', 'html'],
       exclude: [
+        '**/bin/**',
+        '**/template/**',
         '**/main.ts',
         '**/.*.js',
         '**/*.config.{js,mjs,ts}',

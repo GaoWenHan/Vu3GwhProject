@@ -1,26 +1,16 @@
 {
-  "name": "create-gaowenhan-vtw",
-  "version": "1.0.2",
+  "name": "create-gaowenhan-vwt",
+  "version": "1.0.7",
   "description": "Vue 3 + TypeScript项目模板",
   "files": [
-    "src",
-    "public",
-    "config",
-    "*.json",
-    "*.js",
-    "*.mjs",
-    "*.md"
+    "bin/",
+    "template/"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/GaoWenHan/Vu3GwhProject.git"
   },
-  "keywords": [
-    "vue",
-    "typescript",
-    "template",
-    "boilerplate"
-  ],
+  "keywords": [],
   "type": "module",
   "main": "index.js",
   "bin": {
@@ -39,10 +29,13 @@
     "validate": "pnpm lint && pnpm test && pnpm type-check",
     "prepare": "husky install"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.11.0",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "inquirer": "^12.6.3"
+  },
   "devDependencies": {
     "@babel/core": "^7.27.4",
     "@babel/preset-env": "^7.27.2",
@@ -61,7 +54,6 @@
     "@vue/test-utils": "^2.4.6",
     "autoprefixer": "^10.4.21",
     "babel-loader": "^10.0.0",
-    "chalk": "^5.4.1",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.2",
