@@ -45,13 +45,17 @@ function copyTemplate(src, dest) {
   const stat = fs.statSync(src)
   if (stat.isDirectory()) {
     if (!fs.existsSync(dest)) {
-      fs.mkdirSync(dest)
+      fs.mkdirSync(dest, { recursive: true })
     }
     fs.readdirSync(src).forEach(file => {
       copyTemplate(path.join(src, file), path.join(dest, file))
     })
   } else {
-    fs.copyFileSync(src, dest)
+    // 读取文件内容并统一转换为LF行尾
+    const content = fs.readFileSync(src, 'utf8')
+    fs.writeFileSync(dest, content.replace(/\r\n/g, '\n'), 'utf8')
+    // 保持文件权限
+    fs.chmodSync(dest, stat.mode)
   }
 }
 
@@ -143,7 +147,7 @@ inquirer
         })
         execSync('pnpm prepare', { stdio: 'pipe' })
         console.log(chalk.green(`✅ Git 和 Husky 初始化完成`))
-      } catch (err) {
+      } catch {
         console.error(chalk.yellow(`⚠️ Git 初始化失败或 husky 配置异常（非致命）`))
       }
     }
