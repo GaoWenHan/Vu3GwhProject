@@ -6,8 +6,8 @@ import { execSync } from 'child_process'
 import inquirer from 'inquirer'
 import chalk from 'chalk'
 
-// 获取当前模块路径
-const __filename = new URL(import.meta.url).pathname
+// 获取当前模块路径（兼容Windows）
+const __filename = path.resolve(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1'))
 const __dirname = path.dirname(__filename)
 
 // 工具描述信息
